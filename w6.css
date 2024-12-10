@@ -1,0 +1,128 @@
+/* Add background image to the body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('a.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Main container to isolate content from background image */
+  main {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark opaque background for isolation */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px; /* Center and restrict the width */
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  
+  /* Header */
+  h1 {
+    margin: 0 0 20px 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  
+  /* Input field styling */
+  input[type="text"] {
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 20px 10px 0 10px;
+    width: 300px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"]:focus {
+    transform: scale(1.05);
+  }
+  
+  /* Button styling */
+  button {
+    font-size: 1.2em;
+    padding: 12px 25px;
+    margin-top: 10px;
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background-color: #2563eb;
+    transform: translateY(-3px);
+  }
+  
+  /* Spinner */
+  .spinner {
+    display: none;
+    margin: 20px auto;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Pokémon info container */
+  .pokemon-info {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+  }
+  
+  /* Pokémon info text */
+  .pokemon-info h2 {
+    font-size: 2.5em;
+    color: #ffd700;
+    margin-bottom: 20px;
+  }
+  
+  .pokemon-info p {
+    margin: 10px 0;
+  }
+  
+  .pokemon-info img {
+    margin-top: 10px;
+    width: 150px;
+    height: auto;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pokemon-info img:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+  
+  /* Chart canvas */
+  canvas {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 20px 0;
+    max-width: 90%; /* Restrict width */
+    max-height: 300px; /* Restrict height */
+    display: block;
+  }
+  

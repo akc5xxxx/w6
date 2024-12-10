@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="w6.css">
+  <title>Pokémon Info</title>
+</head>
+<body>
+  <main>
+    <h1>Pokémon Information</h1>
+
+    <!-- Input and Buttons -->
+    <input type="text" id="pokemonName" placeholder="Enter Pokémon name or ID">
+    <button id="fetchPokemon">Get Pokémon Info</button>
+    <button id="randomPokemon">Get Random Pokémon</button>
+
+    <!-- Spinner -->
+    <div id="loadingSpinner" class="spinner"></div>
+
+    <!-- Pokémon Info -->
+    <div class="pokemon-info" id="pokemonInfo"></div>
+
+    <!-- Search History -->
+    <div id="searchHistory" class="search-history"></div>
+
+    <!-- Chart for Stats -->
+    <canvas id="statsChart" width="400" height="200"></canvas>
+
+    <p>API Documentation: <a href="https://pokeapi.co/docs/v2" target="_blank">PokéAPI Documentation</a></p>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
